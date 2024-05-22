@@ -28,9 +28,10 @@ app = FastAPI()
 # Esta clase se utiliza para validar los datos de entrada en las solicitudes POST
 class Body(BaseModel):
     text: str
-    
-# Se define una ruta raíz '/' que devuelve una respuesta HTML simple.
-# Esta ruta responde a las solicitudes GET con un mensaje de bienvenida.
+"""    
+Se define una ruta raíz '/' que devuelve una respuesta HTML simple.
+Esta ruta responde a las solicitudes GET con un mensaje de bienvenida.
+"""
 @app.get('/')
 def root():
     return Response("<h1>API autodocumentada que utiliza el marco FastAPI</h1>")
