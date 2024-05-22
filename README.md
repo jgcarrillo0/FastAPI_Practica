@@ -1,4 +1,4 @@
-# FastAPI, Practica de despliegue de una app
+# FastAPI, Practica de despliegue de una API
 
 ## 📌 Objetivo de la practica
 
