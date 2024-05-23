@@ -18,4 +18,4 @@ ENTRYPOINT [ "uvicorn" ]
 
 # indica que el servidor debe estar accesible desde cualquier dirección IP,
 # y main:app especifica que uvicorn debe ejecutar la aplicación app definida en el archivo main.py.
-CMD [ "--host", "0.0.0.0", "main:app" ]
+CMD [ "--host", "127.0.0.1", "main:app" ]
