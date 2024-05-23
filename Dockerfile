@@ -13,6 +13,7 @@ RUN pip install -r requirements.txt
 # Copia todos los archivos de la aplicación desde el directorio local webapp al directorio /webapp 
 COPY webapp/* /webapp
 
+# Expone el puerto 8080
 EXPOSE 8080
 
 #  Establece el punto de entrada para el contenedor
