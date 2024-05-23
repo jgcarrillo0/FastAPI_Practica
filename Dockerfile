@@ -17,8 +17,8 @@ COPY webapp/* /webapp
 EXPOSE 8080
 
 #  Establece el punto de entrada para el contenedor
-ENTRYPOINT [ "uvicorn" ]
+ENTRYPOINT [ "main.py" ]
 
 # indica que el servidor debe estar accesible desde cualquier dirección IP,
 # y main:app especifica que uvicorn debe ejecutar la aplicación app definida en el archivo main.py.
-CMD [ "--host", "127.0.0.1", "main:app" ]
+CMD [ "python" ]
