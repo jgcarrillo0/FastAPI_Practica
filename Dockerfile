@@ -13,6 +13,8 @@ RUN pip install -r requirements.txt
 # Copia todos los archivos de la aplicación desde el directorio local webapp al directorio /webapp 
 COPY webapp/* /webapp
 
+EXPOSE 8080
+
 #  Establece el punto de entrada para el contenedor
 ENTRYPOINT [ "uvicorn" ]
 
