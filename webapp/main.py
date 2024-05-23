@@ -17,6 +17,7 @@ la entrada a las rutas de la API
 """
 from transformers import pipeline
 from fastapi import FastAPI, Response
+from starlette.responses import RedirectResponse
 from pydantic import BaseModel
 
 # Crea un pipeline de generación de texto
@@ -34,7 +35,7 @@ Esta ruta responde a las solicitudes GET con un mensaje de bienvenida.
 """
 @app.get('/')
 def root():
-    return Response("<h1>API autodocumentada que utiliza el marco FastAPI</h1>")
+    return RedirectResponse(url="/docs/")
     
 """
 - Se define una ruta POST '/generate' que toma un objeto Body como entrada
