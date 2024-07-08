@@ -1,24 +1,17 @@
-# Establece la imagen de Docker, utilizará un entorno que tiene Python 3.8
-FROM python:3.8
+# Usar una imagen base de Python
+FROM python:3.9-slim
 
-# Copia el archivo requirements.txt a la ruta /webapp/requirements.txt
-COPY ./requirements.txt /webapp/requirements.txt
+# Copia el archivo requirements.txt a la ruta /app/requirements.txt
+COPY ./requirements.txt /app/requirements.txt
 
-# Copia todos los archivos de la aplicación desde el directorio local webapp al directorio /webapp 
-COPY webapp/* /webapp
+# Copia todos los archivos de la aplicación desde el directorio local webapp al directorio /app 
+COPY app/* /app
 
-# Establece el directorio de trabajo 
-WORKDIR /webapp
+# Establecer el directorio de trabajo en el contenedor
+WORKDIR /app
 
-# Ejecuta el comando para instalar todas las dependencias
-RUN pip install -r requirements.txt
+# Instalar las dependencias
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Expone el puerto 8080
-EXPOSE 8080
-
-CMD [ "main.py" ]
-
-#  Establece el punto de entrada para el contenedor
-ENTRYPOINT [ "python"]
-
-
+# Comando para ejecutar la aplicación
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
