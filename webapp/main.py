@@ -18,13 +18,13 @@ from starlette.responses import RedirectResponse
 from pydantic import BaseModel
 
 """
--pipeline de transformers: Se utiliza para crear un pipeline de generación
+- pipeline de transformers: Se utiliza para crear un pipeline de generación
 de texto con un modelo específico.
 
--FastAPI: se utiliza para crear aplicaciones web y APIs rápidas y eficientes
+- FastAPI: se utiliza para crear aplicaciones web y APIs rápidas y eficientes
 en Python.
 
--RedirectResponse de Starlette: Permite redirigir a los usuarios a una URL
+- RedirectResponse de Starlette: Permite redirigir a los usuarios a una URL
 diferente en una aplicación web.
 
 - BaseModel de pydantic: Se usa para definir modelos de datos que validan
