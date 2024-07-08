@@ -31,12 +31,12 @@ Además de su rendimiento, Uvicorn es conocido por su facilidad de uso y su inte
 
 Docker es una plataforma de software que permite crear, desplegar y ejecutar aplicaciones de manera fácilmente reproducible en entornos virtuales llamados contenedores. Los contenedores son entornos ligeros y portables que contienen todo lo necesario para que una aplicación se ejecute de manera independiente, incluyendo el código, las bibliotecas y las dependencias. Docker simplifica el proceso de desarrollo, prueba y despliegue de aplicaciones al proporcionar un entorno consistente que asegura que la aplicación se ejecute de la misma manera en cualquier lugar donde se ejecute Docker.
 
-## 📦 Descripción los ficheros
+## 📦 Descripción de los ficheros
 
 Se recomienda ingresar a cada uno de los archivos y leer la documentacón incluida.
 
-* **app/main.py**: Directorio que contiene el archivo de pyhton con el códogo de la app
-* **Dockerfile**: Archivo de docker con las instrucciones para construir la imagen de docker a usar
+* **app/main.py**: Directorio que contiene el archivo de python con el código de la app
+* **Dockerfile**: Archivo de Docker con las instrucciones para construir la imagen de Docker a usar
 * **requirements.txt**: Archivo de requerimientos con las librerías que usará la app
 
 ## 📑 Pasos a seguir
