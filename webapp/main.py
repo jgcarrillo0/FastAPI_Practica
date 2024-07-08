@@ -2,7 +2,7 @@
 """
 Created on Sun Jul  7 22:08:25 2024
 
-@author: jgcar
+@author: jgcarrillo0
 
 Este código define una API web que permite a los usuarios generar texto
 utilizando el modelo GPT-2 de Hugging Face. La API tiene una ruta que genera
@@ -56,7 +56,7 @@ class Body(BaseModel):
     """
     text: str
 
-# Se define una ruta raíz '/' para la aplicación FastAPI @app.get('/'). 
+# Se define una ruta raíz '/' para la aplicación FastAPI @app.get('/')
 @app.get('/')
 def root():
     """
