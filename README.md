@@ -25,4 +25,11 @@ Uvicorn se destaca por su capacidad para manejar conexiones de red de forma así
 
 Además de su rendimiento, Uvicorn es conocido por su facilidad de uso y su integración perfecta con otros componentes del ecosistema de Python, como asyncio y el ecosistema de herramientas de desarrollo web como FastAPI, lo que lo convierte en una opción popular para implementar aplicaciones web modernas y escalables.
 
+### 💡 ¿Qué es Docker?
+
+Docker es una plataforma de software que permite crear, desplegar y ejecutar aplicaciones de manera fácilmente reproducible en entornos virtuales llamados contenedores. Los contenedores son entornos ligeros y portables que contienen todo lo necesario para que una aplicación se ejecute de manera independiente, incluyendo el código, las bibliotecas y las dependencias. Docker simplifica el proceso de desarrollo, prueba y despliegue de aplicaciones al proporcionar un entorno consistente que asegura que la aplicación se ejecute de la misma manera en cualquier lugar donde se ejecute Docker.
+
+## 📑 Pasos a seguir
+
+
 
