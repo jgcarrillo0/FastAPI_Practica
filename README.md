@@ -1,6 +1,6 @@
-# FastAPI, Practica de despliegue de una API
+# FastAPI, Práctica de despliegue de una API
 
-## 📌 Objetivo de la practica
+## 📌 Objetivo de la Práctica
 
 Hacer uso de la herramienta de Codespaces de GitHub para realizar el despliegue de una aplicación mediante un contenedor de Docker.
 * Hacer uso del marco web FastAPI para desplegar un servicio
